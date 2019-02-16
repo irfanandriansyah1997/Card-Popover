@@ -1,0 +1,13 @@
+/**
+ * Register All Helpers
+ */
+
+@import './background-color.helper.scss';
+@import './box-shadow.helper.scss';
+@import './display.helper.scss';
+@import './position.helper.scss';
+@import './text-align.helper.scss';
+@import './text-color.helper.scss';
+@import './typography.helper.scss';
+
+@include generate-class();

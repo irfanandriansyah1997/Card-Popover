@@ -1,0 +1,36 @@
+/**
+ * Display Component Helper
+ */
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}

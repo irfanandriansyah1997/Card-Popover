@@ -1,0 +1,9 @@
+/**
+ * Text Color Helper
+ */
+
+@each $name, $color in $color-general {
+  .text--#{$name} {
+    @include font-color($color);
+  }
+}

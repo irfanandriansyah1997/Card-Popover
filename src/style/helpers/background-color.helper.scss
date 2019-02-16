@@ -1,0 +1,13 @@
+/**
+ * Background Color Helper
+ */
+
+/**
+ * Text Color Helper
+ */
+
+@each $name, $color in $color-general {
+  .bg--#{$name} {
+    @include background-color($color);
+  }
+}

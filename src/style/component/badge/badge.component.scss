@@ -1,0 +1,20 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    letter-spacing: -0.5px;
+
+    @include background-color(yellow);
+    @include rounded(0 20px 20px 0);
+    @include padding(all, 10px 15px 10px 10px);
+    @include font-face(
+        $font-primary,
+        light-black,
+        xs,
+        medium,
+        normal,
+        uppercase,
+        none,
+        20
+    );
+}

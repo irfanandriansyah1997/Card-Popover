@@ -1,0 +1,12 @@
+/**
+ * Register All Widget & Pages
+ */
+
+@import 'import.scss';
+
+// Generate class helper & component
+@import 'helpers/style.scss';
+@import 'component/style.scss';
+
+// Reset File
+@import 'reset.scss';

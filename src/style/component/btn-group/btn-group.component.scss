@@ -1,0 +1,44 @@
+.btn-group {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: space-around;
+    overflow: hidden;
+
+    @include rounded(50px);
+    @include border(all, 1.5px, solid, dark-gray);
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        @include padding(all, 6.5px 15px);
+        @include background-color(transparent);
+        @include no-margin();
+        @include no-border();
+        @include border-left(1.5px, solid, dark-gray);
+        @include border-right(1.5px, solid, dark-gray);
+
+        &:first-child {
+            border-left-width: thin;
+        }
+
+        &:last-child {
+            border-right-width: thin;
+        }
+
+        & + .btn-group__item {
+            @include margin-left(-1.5px);
+        }
+    }
+
+    a {
+        cursor: pointer;
+
+        @include transition(0.31s cubic-bezier(0.7, 0.3, 0, 1));
+
+        &:hover {
+            @include background-color(rgba(black, 0.05));
+        }
+    }
+}
