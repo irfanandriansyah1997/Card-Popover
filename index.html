@@ -7,8 +7,34 @@
             content="width=device-width, initial-scale=1.0"
         />
         <title>Card Popover</title>
+        <link rel="preload" href="./static/font/gotham/style.css" as="style">
+        <link rel="stylesheet" href="./static/font/gotham/style.css">
     </head>
     <body>
-        <div id="app"></div>
+        <div class="card">
+            <div class="card__image">
+                <div class="card__badge badge">
+                    bestseller
+                </div>
+                <img src="static/images/image.jpg">
+            </div>
+            <div class="card__content">
+                <div class="title">
+                    <h1>Bose SoundLink</h1>
+                    <p>Little speaker. Big goosebumps.</p>
+                </div>
+                <div class="btn-group">
+                    <a class="btn-group__item">
+                        <img
+                            src="./static/images/quicklook.svg"
+                            alt="read more"
+                        >
+                    </a>
+                    <p class="btn-group__item">
+                        $ 199
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

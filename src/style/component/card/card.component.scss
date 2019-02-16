@@ -1,0 +1,60 @@
+.card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+
+    @include background-color(white);
+    @include box-shadow-multi(0 0 16px 0 rgba(62, 66, 70, 0.025));
+    @include transition(0.31s cubic-bezier(0.7, 0.3, 0, 1));
+
+    &:hover {
+        @include box-shadow-multi(0 2px 8px 0 rgba(62, 66, 70, 0.1));
+    }
+
+    &__image {
+        @include padding(all, 10px 0);
+
+        img {
+            width: 100%;
+            height: initial;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        top: 30px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        @include padding(all, 20px);
+
+        .title {
+            @include margin-bottom(20px);
+        }
+
+        .btn-group {
+            align-self: flex-end;
+
+            p {
+                @include font-face(
+                    $font-primary,
+                    darker-gray,
+                    sm,
+                    bold,
+                    normal,
+                    normal,
+                    none,
+                    20
+                );
+
+                &.btn-group__item {
+                    @include padding(all, 6.5px 10px);
+                }
+            }
+        }
+    }
+}

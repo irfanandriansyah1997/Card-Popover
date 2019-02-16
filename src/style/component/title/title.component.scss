@@ -1,0 +1,36 @@
+.title {
+    h1,
+    p {
+        @include no-margin();
+    }
+
+    h1 {
+        @include font-face(
+            $font-primary,
+            light-black,
+            xl,
+            medium,
+            normal,
+            normal,
+            none,
+            20
+        );
+        @include margin-bottom(5px);
+    }
+
+    p {
+        letter-spacing: -0.25px;
+
+        @include font-face(
+            $font-primary,
+            lightest-black,
+            base,
+            300,
+            normal,
+            normal,
+            none,
+            20
+        );
+        @include margin-bottom(5px);
+    }
+}
