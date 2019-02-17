@@ -30,12 +30,10 @@ module.exports = {
             }
         },
         'linebreak-style': [2, 'unix'],
-        'no-bitwise': [
-            1,
-            { allow: ['~', '>>>', '>>', '<<', '|', '&'], int32Hint: true }
-        ],
+        'no-bitwise': [1, { allow: ['~', '>>>', '>>', '<<', '|', '&'], int32Hint: true }],
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-else-return': [0],
+        'no-new': [0],
         'no-underscore-dangle': [0],
         quotes: [2, 'single'],
         semi: [2, 'always'],
