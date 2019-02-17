@@ -8,6 +8,7 @@
         <title>Card Popover</title>
         <link rel="preload" href="./static/font/gotham/style.css" as="style">
         <link rel="stylesheet" href="./static/font/gotham/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <div
@@ -48,9 +49,9 @@
         props: {
             tag: true,
             image: [
-                './static/images/image.jpg',
-                './static/images/image2.jpg',
-                './static/images/image3.jpg'
+                { image: './static/images/image.jpg', alt: 'Bose Soundlink'},
+                { image: './static/images/image2.jpg', alt: 'Wireless earphones for music lovers who live to move'},
+                { image: './static/images/image3.jpg', alt: 'Powerfull sound'},
             ],
             detail: {
                 title: 'Bose Soundlink',
